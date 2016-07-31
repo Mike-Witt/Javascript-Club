@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
+<script
+  src="animation_test.js">
+</script>
+</head>
+
+<body onload="initialize()">
+<button id='1' onClick="do_click(this.id)">Up</button>
+<button id='2' onClick="do_click(this.id)">Down</button>
+<button id='3' onClick="do_click(this.id)">Left</button>
+<button id='4' onClick="do_click(this.id)">Right</button>
+<button id='5' onClick="do_click(this.id)">100 Random Modes</button>
+<p>
+Animation:
+<div id="frame1" 
+    style="border:2px solid grey; margin:0px; height: 550px; width: 800px">
+</div> 
+<p>
+Debug:
+<div>
+    <textarea id="debug" 
+        style="border-width: 2px 2px 2xp 2xp; height: 200px; width: 800px">
+    </textarea> 
+</div> 
+<p>
+</body>
+</html>
+
