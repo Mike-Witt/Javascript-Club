@@ -1,5 +1,7 @@
 # Mapping code with Leaflets
 
+Status: Working to some extent
+
 ## Code specific to this demo
 
 * group-map.html
@@ -17,3 +19,6 @@
 http://leafletjs.com/
 
 https://github.com/Leaflet/Leaflet.markercluster
+
+https://github.com/Mike-Witt/Meetup-Tools
+

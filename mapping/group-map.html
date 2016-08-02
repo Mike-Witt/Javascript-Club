@@ -31,12 +31,12 @@
         }), latlng = L.latLng(39.68, -104.93); 
 
 		var map = L.map('map', {center: latlng, zoom: 13, layers: [tiles]})
-            .fitBounds([[38.57756916, -105.36812], [40.2809682, -104.70607]]);
+            .fitBounds([[19.708350592, -122.727802], [56.63618824, 114.9403044]]);
 
 		var markers = L.markerClusterGroup();
 		
-		for (var i = 0; i < addressPoints.length; i++) {
-			var a = addressPoints[i];
+		for (var i = 0; i < locations.length; i++) {
+			var a = locations[i];
 			var title = a[2];
 			var marker = L.marker(new L.LatLng(a[0], a[1]), { title: title });
 			marker.bindPopup(title);
