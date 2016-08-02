@@ -8,5 +8,5 @@
 * mapping
 
     Code for mapping meetup groups. This is the JS portion, which uses the
-    "leaflet" library (and expecially the leaflet "clustering" plugin).
+    "leaflet" library (and especially the leaflet "clustering" plugin).
 
