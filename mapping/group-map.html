@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Leaflet debug page</title>
+	<title>map test page</title>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.js"></script>
@@ -15,8 +15,16 @@
 
 </head>
 <body>
-
-	<div id="map"></div>
+<h3>The original version, a .kml file uploaded to google maps:</b>
+<p>
+<iframe src=
+  "https://www.google.com/maps/d/embed?mid=1R9YxOXH7Dhn6r0RNF4KZXUa7G2U&z=4&ll=39.6831431%2C-104.9407401" width="600" height="400">
+</iframe>
+<p>
+<h3>The Leaflet clustering version (still under construction):</h3>
+<p>
+	<div id="map" style="height: 400px; width: 600px;">
+    </div>
 	<script type="text/javascript">
 
         var my_token = "pk.eyJ1IjoibXcxNzgiLCJhIjoiY2lwdWNmcjh3MGNnOGgxbnJnMmw0NzkxbyJ9.auUPVsxLa6mCo8pLHcUXag";
@@ -31,7 +39,7 @@
         }), latlng = L.latLng(39.68, -104.93); 
 
 		var map = L.map('map', {center: latlng, zoom: 13, layers: [tiles]})
-            .fitBounds([[19.708350592, -122.727802], [56.63618824, 114.9403044]]);
+          .fitBounds([[19.708350592, -122.727802], [56.63618824, 114.9403044]]);
 
 		var markers = L.markerClusterGroup();
 		
@@ -44,7 +52,6 @@
 		}
 
 		map.addLayer(markers);
-
 	</script>
 </body>
 </html>
